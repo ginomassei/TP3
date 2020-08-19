@@ -17,3 +17,11 @@ def print_blue_text(string):
     reset_text = '\033[m'
 
     print(blue_text + string + reset_text)
+
+
+def striketrought_print(string):
+    crossed_text = '\033[09;37;37m'
+    reset_text = '\033[m'
+
+    print(crossed_text + string + reset_text)
+
