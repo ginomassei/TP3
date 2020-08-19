@@ -2,9 +2,9 @@
 
 [] Generar el arreglo de registros de manera aleatoria o manual.
 
-[] 16 posiciones.
+    [] 16 posiciones.
 
-NOMBRE, CONTINENTE
+    NOMBRE, CONTINENTE
 
 [] Listar el contenido del vector, ordenado por ranking.
 
