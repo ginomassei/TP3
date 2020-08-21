@@ -24,4 +24,3 @@ def striketrought_print(string):
     reset_text = '\033[m'
 
     print(crossed_text + string + reset_text)
-
