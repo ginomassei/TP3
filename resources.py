@@ -18,11 +18,11 @@ def to_string(participante):
 
 
 def random_load(vec):
-    # Lista con los 16 posibles nombres
+    # Lista con los 16 posibles nombres.
     nombres = ['AED', 'MAD', 'ALG', 'SOR', 'ACO', 'AM1', 'ASI', 'AM2',
                'SSL', 'PPR', 'SOP', 'DSI', 'COM', 'GDA', 'SIM', 'ECO']
 
-    # Generación de un vector de participantes seleccionando los datos de forma aleatoria
+    # Generación de un vector de participantes seleccionando los datos de forma aleatoria.
     for i in range(len(vec)):
         nombre = random.choice(nombres)
         continente = random.randint(0, 4)
@@ -30,12 +30,12 @@ def random_load(vec):
 
         vec[i] = Participante(nombre, continente, ranking)
 
-        # Eliminación del nombre usado en la lista original
+        # Eliminación del nombre usado en la lista original.
         nombres.remove(nombre)
 
 
 def manual_load(vec):
-    # Generación de un vector de participantes cargando los datos manualmente
+    # Generación de un vector de participantes cargando los datos manualmente.
     for i in range(len(vec)):
         print('Competidor ' + str(i+1))
         nombre = input('Nombre del competidor: ')

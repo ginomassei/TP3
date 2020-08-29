@@ -22,6 +22,7 @@ def main():
         print('1 - Cargar el vector de competidores de forma manual.')
         print('2 - Cargar el vector de competidores de forma automática.')
         print('3 - Mostrar el vector cargado.')
+        print('4 - Generar competición.')
 
         print('0 - Salir.')
 
