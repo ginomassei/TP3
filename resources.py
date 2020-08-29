@@ -10,11 +10,11 @@ class Participante:
 
 def to_string(participante):
     r = ''
-    r += ('Nombre del competidor: ' + participante.nombre)
-    r += (' Continente: ' + str(participante.continente))
+    r += ('Nombre del competidor: ' + participante.nombre + ' | ')
+    r += (' Continente: ' + str(participante.continente) + ' | ')
     r += (' Ranking: ' + str(participante.ranking))
 
-    print(r)
+    return r
 
 
 def random_load(vec):
@@ -37,7 +37,6 @@ def random_load(vec):
 def manual_load(vec):
     # Generación de un vector de participantes cargando los datos manualmente
     for i in range(len(vec)):
-
         print('Competidor ' + str(i+1))
         nombre = input('Nombre del competidor: ')
         continente = verify_in_range(int(input('Continente(entre 0 y 4): ')), 0, 5)
@@ -60,3 +59,8 @@ def verify_in_range(num, n, x):
         num = int(input('Continente(entre 0 y 4): '))
 
     return num
+
+
+def print_reg(vec):
+    for i in vec:
+        print(to_string(i))
