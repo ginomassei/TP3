@@ -50,6 +50,9 @@ def main():
         if option == 4:
             option4(participants_array)
 
+    match_array = rs.match_generation(participants_array)
+    rs.match_print(match_array)
+
 
 if __name__ == "__main__":
     main()

@@ -6,6 +6,8 @@ class Participante:
         self.nombre = nombre
         self.continente = continente
         self.ranking = ranking
+        self.puntaje = 0
+
 
 
 def to_string(participante):
@@ -45,13 +47,37 @@ def manual_load(vec):
         vec[i] = Participante(nombre, continente, ranking)
 
 
-def match_generation():
-    pass
+def match_generation(participants):
 
+    first = 0
+    last = -1
+
+    n = len(participants)
+
+    match_array = []
+
+    while first < (n / 2):
+
+        match_array.append([participants[first], participants[last]])
+
+        first += 1
+        last -= 1
+
+    return match_array
+
+def match_print(match_array):
+
+    print('Enfrentamientos')
+    print()
+
+    for i in range(len(match_array)):
+
+        print(match_array[i][0].nombre, 'VS', match_array[i][1].nombre)
+
+    print()
 
 def match_simulation():
     pass
-
 
 def participants_per_continent(vec):
     continent_acum = [0] * 5
