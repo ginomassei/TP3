@@ -7,10 +7,16 @@ def option1(participantes):
 
 def option2(participantes):
     rs.random_load(participantes)
+    rs.ranking_shell_sort(participantes)
 
 
 def option3(participantes):
     rs.print_reg(participantes)
+    rs.ranking_shell_sort(participantes)
+
+
+def option4(participantes):
+    pass
 
 
 def main():
@@ -36,6 +42,9 @@ def main():
 
         if option == 3:
             option3(participantes)
+
+        if option == 4:
+            option4(participantes)
 
 
 if __name__ == "__main__":

@@ -10,9 +10,9 @@ class Participante:
 
 def to_string(participante):
     r = ''
-    r += ('Nombre del competidor: ' + participante.nombre + ' | ')
-    r += (' Continente: ' + str(participante.continente) + ' | ')
-    r += (' Ranking: ' + str(participante.ranking))
+    r += 'Nombre del competidor: ' + participante.nombre + ' | '
+    r += ' Continente: ' + str(participante.continente) + ' | '
+    r += ' Ranking: ' + str(participante.ranking)
 
     return r
 
@@ -53,6 +53,13 @@ def match_simulation():
     pass
 
 
+def participants_per_continent(vec):
+    continent_acum = [0] * 5
+    for i in vec:
+        continent_acum[i.continente] += 1
+    return continent_acum
+
+
 def verify_in_range(num, n, x):
     while not(num in range(n, x)):
         print('Error. Debe ingresar un valor entre ' + str(n) + ' y ' + str(x - 1))
@@ -64,3 +71,45 @@ def verify_in_range(num, n, x):
 def print_reg(vec):
     for i in vec:
         print(to_string(i))
+
+
+def shell_sort(vec):
+    n = len(vec)
+    h = 1
+
+    while h <= n // 9:
+        h = 3 * h + 1
+
+    while h > 0:
+        for j in range(h, n):
+            y = vec[j]
+            k = j - h
+
+            while k >= 0 and y < vec[k]:
+                vec[k+h] = vec[k]
+                k -= h
+
+            vec[k+h] = y
+
+        h //= 3
+
+
+def ranking_shell_sort(vec):
+    n = len(vec)
+    h = 1
+
+    while h <= n // 9:
+        h = 3 * h + 1
+
+    while h > 0:
+        for j in range(h, n):
+            y = vec[j]
+            k = j - h
+
+            while k >= 0 and y.ranking < vec[k].ranking:  # Efectúo la comparación basada en el ranking.
+                vec[k+h] = vec[k]
+                k -= h
+
+            vec[k+h] = y
+
+        h //= 3
