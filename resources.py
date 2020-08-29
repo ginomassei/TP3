@@ -36,7 +36,6 @@ def random_load(vec):
 
 def manual_load(vec):
     # Generación de un vector de participantes cargando los datos manualmente.
-
     for i in range(len(vec)):
         print('Competidor ' + str(i+1))
         nombre = input('Nombre del competidor: ')
