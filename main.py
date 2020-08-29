@@ -3,6 +3,7 @@ import resources as rs
 
 def option1(participantes):
     rs.manual_load(participantes)
+    rs.ranking_shell_sort(participantes)
 
 
 def option2(participantes):
@@ -12,7 +13,6 @@ def option2(participantes):
 
 def option3(participantes):
     rs.print_reg(participantes)
-    rs.ranking_shell_sort(participantes)
 
 
 def option4(participantes):

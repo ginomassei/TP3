@@ -36,6 +36,7 @@ def random_load(vec):
 
 def manual_load(vec):
     # Generación de un vector de participantes cargando los datos manualmente.
+
     for i in range(len(vec)):
         print('Competidor ' + str(i+1))
         nombre = input('Nombre del competidor: ')
@@ -73,43 +74,20 @@ def print_reg(vec):
         print(to_string(i))
 
 
-def shell_sort(vec):
-    n = len(vec)
-    h = 1
-
-    while h <= n // 9:
-        h = 3 * h + 1
-
-    while h > 0:
-        for j in range(h, n):
-            y = vec[j]
-            k = j - h
-
-            while k >= 0 and y < vec[k]:
-                vec[k+h] = vec[k]
-                k -= h
-
-            vec[k+h] = y
-
-        h //= 3
-
-
 def ranking_shell_sort(vec):
+    # Utilizamos shell sort, porque si en un momento se desee ampliar el programa, ya tenemos un algoritmo de
+    # ordenamiento lo suficientemente potente, para manejar grandes cantidades de datos.
     n = len(vec)
     h = 1
 
     while h <= n // 9:
         h = 3 * h + 1
-
     while h > 0:
         for j in range(h, n):
             y = vec[j]
             k = j - h
-
             while k >= 0 and y.ranking < vec[k].ranking:  # Efectúo la comparación basada en el ranking.
                 vec[k+h] = vec[k]
                 k -= h
-
             vec[k+h] = y
-
         h //= 3
