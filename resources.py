@@ -67,7 +67,7 @@ def match_print(match_array):
     print()
 
     for i in range(len(match_array)):
-        print(f"{match_array[i][0].nombre} VS {match_array[i][1].nombre}")
+        print(f"{match_array[i][0].nombre} vs {match_array[i][1].nombre}")
 
 
 def match_simulation():
