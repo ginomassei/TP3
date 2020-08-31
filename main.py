@@ -23,7 +23,8 @@ def option3(participants):
 
 
 def option4(participants):
-    pass
+    match_arr = rs.match_generation(participants)
+    rs.match_print(match_arr)
 
 
 def main():

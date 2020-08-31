@@ -62,14 +62,11 @@ def match_generation(participants):
 
 
 def match_print(match_array):
-
     print('Enfrentamientos')
     print()
 
     for i in range(len(match_array)):
-
         print(match_array[i][0].nombre, 'VS', match_array[i][1].nombre)
-
     print()
 
 
