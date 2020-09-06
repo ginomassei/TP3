@@ -16,11 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c23b08e9-82d1-43c7-8d2b-ebf26afda6db" name="Default Changelist" comment="Match generation and show">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c23b08e9-82d1-43c7-8d2b-ebf26afda6db" name="Default Changelist" comment="Print match">
+      <change beforePath="$PROJECT_DIR$/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +37,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/ginomassei/TP3" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1gkCXlzBnS5Xa22ILcTnHA9fQCc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +51,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -45,7 +58,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TP3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,38 +80,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="resources" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TP3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/resources.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.resources" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c23b08e9-82d1-43c7-8d2b-ebf26afda6db" name="Default Changelist" comment="" />
@@ -184,29 +172,42 @@
       <option name="project" value="LOCAL" />
       <updated>1598714618403</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="all pushed">
+      <created>1598883360741</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1598883360742</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Menu option number 4">
+      <created>1598894537197</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1598894537197</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Print match">
+      <created>1598894779072</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1598894779072</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="1">
+        <entry key="MAIN">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -215,16 +216,6 @@
             </State>
           </value>
         </entry>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -240,30 +231,28 @@
     <MESSAGE value="Fixed typos.&#10;Showed statistics N1" />
     <MESSAGE value="Syles" />
     <MESSAGE value="Readme updated" />
-    <MESSAGE value="Match generation and show" />
-    <option name="LAST_COMMIT_MESSAGE" value="Match generation and show" />
+    <MESSAGE value="all pushed" />
+    <MESSAGE value="Menu option number 4" />
+    <MESSAGE value="Print match" />
+    <option name="LAST_COMMIT_MESSAGE" value="Print match" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="291" key="GridCell.Tab.0.bottom" timestamp="1598732723283">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="409" key="GridCell.Tab.0.bottom" timestamp="1598894754142">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732723283" />
-    <state width="1259" height="409" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1598713944356" />
-    <state width="1899" height="291" key="GridCell.Tab.0.center" timestamp="1598732723282">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="409" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1598894754142" />
+    <state width="2539" height="409" key="GridCell.Tab.0.center" timestamp="1598894754141">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732723282" />
-    <state width="1259" height="409" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1598713944355" />
-    <state width="1899" height="291" key="GridCell.Tab.0.left" timestamp="1598732723282">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="409" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1598894754141" />
+    <state width="2539" height="409" key="GridCell.Tab.0.left" timestamp="1598894754141">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732723282" />
-    <state width="1259" height="409" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1598713944355" />
-    <state width="1899" height="291" key="GridCell.Tab.0.right" timestamp="1598732723282">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="409" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1598894754141" />
+    <state width="2539" height="409" key="GridCell.Tab.0.right" timestamp="1598894754142">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732723282" />
-    <state width="1259" height="409" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1598713944356" />
+    <state width="2539" height="409" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1598894754142" />
     <state width="1259" height="502" key="GridCell.Tab.1.bottom" timestamp="1598709200382">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -280,18 +269,9 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1259" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1598709200382" />
-    <state x="763" y="222" key="RollbackChangesDialog" timestamp="1598881059496">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1598894782272">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="763" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598881059496" />
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1598881186183">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598881186183" />
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1598714626560" />
-    <state x="695" y="308" key="git4idea.merge.GitPullDialog" timestamp="1598881073527">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="695" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598881073527" />
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1598894782272" />
   </component>
 </project>
