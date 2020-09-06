@@ -19,12 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c23b08e9-82d1-43c7-8d2b-ebf26afda6db" name="Default Changelist" comment="Readme updated">
-      <change beforePath="$PROJECT_DIR$/.idea/TP3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TP3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c23b08e9-82d1-43c7-8d2b-ebf26afda6db" name="Default Changelist" comment="Match generation and show">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,11 +190,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -214,28 +240,29 @@
     <MESSAGE value="Fixed typos.&#10;Showed statistics N1" />
     <MESSAGE value="Syles" />
     <MESSAGE value="Readme updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme updated" />
+    <MESSAGE value="Match generation and show" />
+    <option name="LAST_COMMIT_MESSAGE" value="Match generation and show" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="291" key="GridCell.Tab.0.bottom" timestamp="1598732369906">
+    <state width="1899" height="291" key="GridCell.Tab.0.bottom" timestamp="1598732723283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732369906" />
+    <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732723283" />
     <state width="1259" height="409" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1598713944356" />
-    <state width="1899" height="291" key="GridCell.Tab.0.center" timestamp="1598732369906">
+    <state width="1899" height="291" key="GridCell.Tab.0.center" timestamp="1598732723282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732369906" />
+    <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732723282" />
     <state width="1259" height="409" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1598713944355" />
-    <state width="1899" height="291" key="GridCell.Tab.0.left" timestamp="1598732369906">
+    <state width="1899" height="291" key="GridCell.Tab.0.left" timestamp="1598732723282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732369906" />
+    <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732723282" />
     <state width="1259" height="409" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1598713944355" />
-    <state width="1899" height="291" key="GridCell.Tab.0.right" timestamp="1598732369906">
+    <state width="1899" height="291" key="GridCell.Tab.0.right" timestamp="1598732723282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732369906" />
+    <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598732723282" />
     <state width="1259" height="409" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1598713944356" />
     <state width="1259" height="502" key="GridCell.Tab.1.bottom" timestamp="1598709200382">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -253,9 +280,18 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1259" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1598709200382" />
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1598714626560">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="763" y="222" key="RollbackChangesDialog" timestamp="1598881059496">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="763" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598881059496" />
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2" timestamp="1598881186183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="660" y="329" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598881186183" />
     <state x="880" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1598714626560" />
+    <state x="695" y="308" key="git4idea.merge.GitPullDialog" timestamp="1598881073527">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="695" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1598881073527" />
   </component>
 </project>
