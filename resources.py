@@ -2,6 +2,7 @@ import random
 import style
 
 
+# Creación de la clase participante.
 class Participante:
     def __init__(self, nombre=None, continente=None, ranking=None):
         self.nombre = nombre

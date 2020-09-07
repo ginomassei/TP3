@@ -27,10 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c23b08e9-82d1-43c7-8d2b-ebf26afda6db" name="Default Changelist" comment="Print match">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_31_08_2020_11_14_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_31_08_2020_11_14__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598894779072</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary=".">
+      <created>1599496840915</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599496840915</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +230,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="." />
     <MESSAGE value="Optimized general.&#10;Funciones Juan" />
     <MESSAGE value="Now, the vector is generate outside the function." />
     <MESSAGE value="Fixed to_string method." />
@@ -237,9 +242,14 @@
     <MESSAGE value="all pushed" />
     <MESSAGE value="Menu option number 4" />
     <MESSAGE value="Print match" />
-    <option name="LAST_COMMIT_MESSAGE" value="Print match" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="100" y="100" width="2360" height="1240" key="DiffContextDialog" timestamp="1599496314228">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="100" y="100" width="2360" height="1240" key="DiffContextDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1599496314228" />
     <state width="2539" height="409" key="GridCell.Tab.0.bottom" timestamp="1598894754142">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -272,6 +282,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1259" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1598709200382" />
+    <state x="789" y="356" key="SettingsEditor" timestamp="1599497425138">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="789" y="356" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1599497425138" />
     <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1598894782272">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
