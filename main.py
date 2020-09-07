@@ -23,16 +23,12 @@ def option3(participants):
 
 
 def option4(participants):
-
     match_arr = rs.match_generation(participants)
-
     n = 0
     c = 0
 
     while n < 3:
-
         if c > 0:
-
             match_arr = rs.match_generation(winners_arr)
 
         rs.match_print(match_arr)
