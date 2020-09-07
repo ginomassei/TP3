@@ -11,7 +11,7 @@ def option1_2(participants, option):
     rs.ranking_shell_sort(participants)
 
     data = rs.participants_per_continent(participants)
-    s.print_red_text(f'Participantes de América: {data[0]}')
+    s.print_red_text(f'\nParticipantes de América: {data[0]}')
     s.print_red_text(f'Participantes de Europa: {data[1]}')
     s.print_red_text(f'Participantes de Asia: {data[2]}')
     s.print_red_text(f'Participantes de Africa: {data[3]}')
@@ -23,8 +23,23 @@ def option3(participants):
 
 
 def option4(participants):
+
     match_arr = rs.match_generation(participants)
-    rs.match_print(match_arr)
+
+    n = 0
+    c = 0
+
+    while n < 3:
+
+        if c > 0:
+
+            match_arr = rs.match_generation(winners_arr)
+
+        rs.match_print(match_arr)
+        input('\nPresione enter para continuar')
+        winners_arr = rs.match_simulation(match_arr)
+        c += 1
+        n += 1
 
 
 def main():
@@ -49,6 +64,7 @@ def main():
             option3(participants_array)
 
         if option == 4:
+
             option4(participants_array)
 
     match_array = rs.match_generation(participants_array)

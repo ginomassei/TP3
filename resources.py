@@ -63,16 +63,56 @@ def match_generation(participants):
 
 
 def match_print(match_array):
-    style.print_red_text('Enfrentamientos: ')
+
+    instancia = ''
+    if len(match_array) == 8:
+
+        instancia = 'Octavos de final'
+
+    if len(match_array) == 4:
+
+        instancia = 'Cuartos de final'
+
+    if len(match_array) == 2:
+
+        instancia = 'Semifinales'
+
+    style.print_red_text('\nEnfrentamientos - ' + instancia)
     print()
 
     for i in range(len(match_array)):
         print(f"{match_array[i][0].nombre} vs {match_array[i][1].nombre}")
 
 
-def match_simulation():
-    pass
+def match_simulation(match_array):
 
+    c = 0
+    suma = 0
+    winners_array = []
+
+    for i in range(len(match_array)):
+
+        while c < 2:
+
+            match_array[i][c].puntaje = random.randint(0, 1000)
+            suma += match_array[i][c].puntaje
+            c += 1
+
+        if match_array[i][0].puntaje > match_array[i][1].puntaje:
+
+            winners_array.append(match_array[i][0])
+
+        else:
+
+            winners_array.append(match_array[i][1])
+
+        c = 0
+
+    prom = round(suma / (len(match_array * 2)), 2)
+
+    print('\nEl puntaje promedio obtenido por los equipos en esta instancia fue: ' + str(prom))
+
+    return winners_array
 
 def participants_per_continent(vec):
     continent_acum = [0] * 5
