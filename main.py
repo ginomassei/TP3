@@ -2,13 +2,8 @@ import resources
 import style
 
 
-def option1_2(participants, option):
-    if option == 1:
-        resources.manual_load(participants)
-    elif option == 2:
-        resources.random_load(participants)
+def option1_2(participants):
 
-    resources.ranking_shell_sort(participants)
 
     data = resources.participants_per_continent(participants)
     style.print_red_text(f'\nParticipantes de América: {data[0]}')
@@ -30,7 +25,7 @@ def main():
         print('\nMenú de opciones:')
         print('1 - Cargar el vector de competidores de forma manual.')
         print('2 - Generar el vector de competidores de forma automática.')
-        print('3 - Mostrar el vector cargado.')
+        print('3 - Mostrar el vector cargado ordenado por ranking.')
         print('4 - Generar competición.')
 
         style.print_blue_text('\n0 - Salir.')
@@ -40,15 +35,16 @@ def main():
 
         # Tratamiento de la opción seleccionada.
         if option == 1:
-            v = resources.load()
+            v = resources.load(1)
             style.print_green_text('Vector cargado correctamente.')
 
         elif option == 2:
-            v = resources.load(1)
+            v = resources.load()
             style.print_green_text('Vector cargado correctamente.')
 
         elif option == 3:
             if len(v) != 0:
+                resources.ranking_shell_sort(v)
                 resources.print_reg(v)
             else:
                 style.print_red_text('No hay elementos para mostrar.')
@@ -64,17 +60,12 @@ def main():
                         match_arr = resources.match_generation(winners_arr)
 
                     resources.match_print(match_arr)
-                    input('\nPresione enter para continuar')
+                    input('\nPresione enter para continuar.')
                     winners_arr = resources.match_simulation(match_arr)
                     c += 1
                     n += 1
             else:
                 style.print_red_text('No hay elementos cargados.')
-
-
-
-    match_array = rs.match_generation(participants_array)
-    rs.match_print(match_array)
 
 
 if __name__ == "__main__":
