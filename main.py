@@ -59,7 +59,7 @@ def main():
                     resources.match_print(match_arr)
 
                     print()
-                    input('\033[32;1m' + 'Presione enter para continuar.' +'\033[m')
+                    input('\033[32;1m' + 'Presione enter para continuar.' + '\033[m')
                     winners_arr = resources.match_simulation(match_arr)
                     c += 1
                     n += 1
