@@ -124,6 +124,14 @@ def participants_per_continent(vec):
     return continent_acum
 
 
+def show_participants_per_continent(data):
+    style.print_red_text(f'\nParticipantes de América: {data[0]}')
+    style.print_red_text(f'Participantes de Europa: {data[1]}')
+    style.print_red_text(f'Participantes de Asia: {data[2]}')
+    style.print_red_text(f'Participantes de Africa: {data[3]}')
+    style.print_red_text(f'Participantes de Oceanía: {data[4]}')
+
+
 def print_reg(vec):
     for i in vec:
         print(to_string(i))

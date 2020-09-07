@@ -2,17 +2,6 @@ import resources
 import style
 
 
-def option1_2(participants):
-
-
-    data = resources.participants_per_continent(participants)
-    style.print_red_text(f'\nParticipantes de América: {data[0]}')
-    style.print_red_text(f'Participantes de Europa: {data[1]}')
-    style.print_red_text(f'Participantes de Asia: {data[2]}')
-    style.print_red_text(f'Participantes de Africa: {data[3]}')
-    style.print_red_text(f'Participantes de Oceanía: {data[4]}')
-
-
 def main():
     style.print_blue_text('Bienvenido!')
     v = []  # Creación del vector contenedor de los participantes.
@@ -38,9 +27,17 @@ def main():
             v = resources.load(1)
             style.print_green_text('Vector cargado correctamente.')
 
+            # Mostrar la estadística pedida.
+            data = resources.participants_per_continent(v)
+            resources.show_participants_per_continent(data)
+
         elif option == 2:
             v = resources.load()
             style.print_green_text('Vector cargado correctamente.')
+
+            # Mostrar la estadística pedida.
+            data = resources.participants_per_continent(v)
+            resources.show_participants_per_continent(data)
 
         elif option == 3:
             if len(v) != 0:
