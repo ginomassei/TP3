@@ -13,6 +13,7 @@ class Participante:
 
 # Funciones propias.
 def to_string(participante):
+    # Tranforma un registro a su representación en string.
     r = ''
     r += 'Nombre del competidor: ' + participante.nombre + ' | '
     r += ' Continente: ' + str(participante.continente) + ' | '
