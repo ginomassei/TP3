@@ -11,12 +11,12 @@ class Participante:
         self.puntaje = 0
 
 
+# Funciones propias.
 def to_string(participante):
     r = ''
     r += 'Nombre del competidor: ' + participante.nombre + ' | '
     r += ' Continente: ' + str(participante.continente) + ' | '
     r += ' Ranking: ' + str(participante.ranking)
-
     return r
 
 
