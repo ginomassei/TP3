@@ -89,11 +89,10 @@ def match_print(match_array):
     print()
 
     for i in range(len(match_array)):
-        print(f"{match_array[i][0].nombre} vs {match_array[i][1].nombre}")
+        print(f'{match_array[i][0].nombre} vs {match_array[i][1].nombre}')
 
 
 def match_simulation(match_array):
-
     c = 0
     suma = 0
     winners_array = []
@@ -126,11 +125,11 @@ def participants_per_continent(vec):
 
 
 def show_participants_per_continent(data):
-    style.print_red_text(f'\nParticipantes de América: {data[0]}')
-    style.print_red_text(f'Participantes de Europa: {data[1]}')
-    style.print_red_text(f'Participantes de Asia: {data[2]}')
-    style.print_red_text(f'Participantes de Africa: {data[3]}')
-    style.print_red_text(f'Participantes de Oceanía: {data[4]}')
+    print(f'\nParticipantes de América: {data[0]}')
+    print(f'Participantes de Europa: {data[1]}')
+    print(f'Participantes de Asia: {data[2]}')
+    print(f'Participantes de Africa: {data[3]}')
+    print(f'Participantes de Oceanía: {data[4]}')
 
 
 def print_reg(vec):
