@@ -10,17 +10,16 @@ class Participante:
         self.ranking = ranking
         self.puntaje = 0
 
+    def __str__(self):
+        # Tranforma un registro a su representación en string.
+        r = ''
+        r += 'Nombre del competidor: ' + self.nombre + ' | '
+        r += ' Continente: ' + str(self.continente) + ' | '
+        r += ' Ranking: ' + str(self.ranking)
+        return r
+
 
 # Funciones propias.
-def to_string(participante):
-    # Tranforma un registro a su representación en string.
-    r = ''
-    r += 'Nombre del competidor: ' + participante.nombre + ' | '
-    r += ' Continente: ' + str(participante.continente) + ' | '
-    r += ' Ranking: ' + str(participante.ranking)
-    return r
-
-
 def load(opt=0):
     # Carga el vector de registros.
     # Por defecto, realiza la carga de manera automática.
@@ -134,7 +133,7 @@ def show_participants_per_continent(data):
 
 def print_reg(vec):
     for i in vec:
-        print(to_string(i))
+        print(vec(i))
 
 
 def ranking_shell_sort(vec):
