@@ -132,8 +132,8 @@ def show_participants_per_continent(data):
 
 
 def print_reg(vec):
-    for i in vec:
-        print(vec(i))
+    for i in range(len(vec)):
+        print(vec[i])
 
 
 def ranking_shell_sort(vec):
