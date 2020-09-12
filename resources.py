@@ -125,8 +125,9 @@ def match_simulation(match_array):
     prom = round(suma / (len(match_array * 2)), 2)
     print('\nEl puntaje promedio obtenido por los equipos en esta instancia fue: ' + str(prom))
 
-    if third_array != []:
-        return (winners_array, third_array)
+    if len(third_array) != 0:
+        print('basinga')
+        return winners_array, third_array
 
     return winners_array
 

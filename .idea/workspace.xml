@@ -4,10 +4,6 @@
     <expand>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -16,12 +12,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c23b08e9-82d1-43c7-8d2b-ebf26afda6db" name="Default Changelist" comment="Print match">
+    <list default="true" id="84f7aa29-e401-41d0-8e9d-890b358e7b41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +113,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -274,25 +276,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="981" y="289" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1599926975995" />
-    <state width="1899" height="291" key="GridCell.Tab.0.bottom" timestamp="1599936032759">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="422" key="GridCell.Tab.0.bottom" timestamp="1599947342684">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1599936032759" />
+    <state width="2539" height="422" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1599947342684" />
     <state width="2539" height="409" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1598894754142" />
-    <state width="1899" height="291" key="GridCell.Tab.0.center" timestamp="1599936032759">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="422" key="GridCell.Tab.0.center" timestamp="1599947342682">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1599936032759" />
+    <state width="2539" height="422" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1599947342682" />
     <state width="2539" height="409" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1598894754141" />
-    <state width="1899" height="291" key="GridCell.Tab.0.left" timestamp="1599936032759">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="422" key="GridCell.Tab.0.left" timestamp="1599947342679">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1599936032759" />
+    <state width="2539" height="422" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1599947342679" />
     <state width="2539" height="409" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1598894754141" />
-    <state width="1899" height="291" key="GridCell.Tab.0.right" timestamp="1599936032759">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="422" key="GridCell.Tab.0.right" timestamp="1599947342683">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1599936032759" />
+    <state width="2539" height="422" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1599947342683" />
     <state width="2539" height="409" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1598894754142" />
     <state width="1259" height="502" key="GridCell.Tab.1.bottom" timestamp="1598709200382">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -314,9 +320,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="480" y="191" key="SettingsEditor/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1599927118377" />
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1598894782272">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="1112" y="413" key="VCS.ChangeListViewerDialog" timestamp="1599946864945">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
+    <state x="1112" y="413" key="VCS.ChangeListViewerDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1599946864945" />
+    <state x="880" y="455" key="Vcs.Push.Dialog.v2" timestamp="1599946883477">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="880" y="455" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1599946883477" />
     <state x="880" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1598894782272" />
   </component>
 </project>
