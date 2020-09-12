@@ -1,74 +1,70 @@
-import resources as rs
-import style as s
-
-
-def option1_2(participants, option):
-    if option == 1:
-        rs.manual_load(participants)
-    elif option == 2:
-        rs.random_load(participants)
-
-    rs.ranking_shell_sort(participants)
-
-    data = rs.participants_per_continent(participants)
-    s.print_red_text(f'\nParticipantes de América: {data[0]}')
-    s.print_red_text(f'Participantes de Europa: {data[1]}')
-    s.print_red_text(f'Participantes de Asia: {data[2]}')
-    s.print_red_text(f'Participantes de Africa: {data[3]}')
-    s.print_red_text(f'Participantes de Oceanía: {data[4]}')
-
-
-def option3(participants):
-    rs.print_reg(participants)
-
-
-def option4(participants):
-
-    match_arr = rs.match_generation(participants)
-
-    n = 0
-    c = 0
-
-    while n < 3:
-
-        if c > 0:
-
-            match_arr = rs.match_generation(winners_arr)
-
-        rs.match_print(match_arr)
-        input('\nPresione enter para continuar')
-        winners_arr = rs.match_simulation(match_arr)
-        c += 1
-        n += 1
+import resources
+import style
 
 
 def main():
-    participants_array = 16 * [None]  # Creación del vector contenedor de los participantes.
-    option = -1
+    style.print_blue_text('Bienvenido!')
+    v = []  # Creación del vector contenedor de los participantes.
 
+    # Menú de opciones.
+    print('-' * 80)
+    option = -1
     while option != 0:
+        # Listado de opciones.
         print('\nMenú de opciones:')
         print('1 - Cargar el vector de competidores de forma manual.')
         print('2 - Generar el vector de competidores de forma automática.')
-        print('3 - Mostrar el vector cargado.')
+        print('3 - Mostrar el vector cargado ordenado por ranking.')
         print('4 - Generar competición.')
 
-        print('0 - Salir.')
+        style.print_blue_text('\n0 - Salir.')
 
         option = int(input('\nIngrese su opción: '))
+        print('-' * 80)
 
-        if option == 1 or option == 2:
-            option1_2(participants_array, option)
+        # Tratamiento de la opción seleccionada.
+        if option == 1:
+            v = resources.load(1)
+            style.print_green_text('Vector cargado correctamente.')
 
-        if option == 3:
-            option3(participants_array)
+            # Mostrar la estadística pedida.
+            data = resources.participants_per_continent(v)
+            resources.show_participants_per_continent(data)
 
-        if option == 4:
+        elif option == 2:
+            v = resources.load()
+            style.print_green_text('Vector cargado correctamente.')
 
-            option4(participants_array)
+            # Mostrar la estadística pedida.
+            data = resources.participants_per_continent(v)
+            resources.show_participants_per_continent(data)
 
-    match_array = rs.match_generation(participants_array)
-    rs.match_print(match_array)
+        elif option == 3:
+            if len(v) != 0:
+                resources.ranking_shell_sort(v)
+                resources.print_reg(v)
+            else:
+                style.print_red_text('No hay elementos para mostrar.')
+
+        elif option == 4:
+            if len(v) != 0:
+                match_arr = resources.match_generation(v)
+                n = 0
+                c = 0
+
+                while n < 3:
+                    if c > 0:
+                        match_arr = resources.match_generation(winners_arr)
+
+                    resources.match_print(match_arr)
+
+                    print()
+                    input('\033[32;1m' + 'Presione enter para continuar.' + '\033[m')
+                    winners_arr = resources.match_simulation(match_arr)
+                    c += 1
+                    n += 1
+            else:
+                style.print_red_text('No hay elementos cargados.')
 
 
 if __name__ == "__main__":

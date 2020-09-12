@@ -2,6 +2,7 @@ import random
 import style
 
 
+# Creación de la clase participante.
 class Participante:
     def __init__(self, nombre=None, continente=None, ranking=None):
         self.nombre = nombre
@@ -9,42 +10,51 @@ class Participante:
         self.ranking = ranking
         self.puntaje = 0
 
+    def __str__(self):
+        # Tranforma un registro a su representación en string.
+        r = ''
+        r += 'Nombre del competidor: ' + self.nombre + ' | '
+        r += ' Continente: ' + str(self.continente) + ' | '
+        r += ' Ranking: ' + str(self.ranking)
+        return r
 
-def to_string(participante):
-    r = ''
-    r += 'Nombre del competidor: ' + participante.nombre + ' | '
-    r += ' Continente: ' + str(participante.continente) + ' | '
-    r += ' Ranking: ' + str(participante.ranking)
 
-    return r
+# Funciones propias.
+def load(opt=0):
+    # Carga el vector de registros.
+    # Por defecto, realiza la carga de manera automática.
+    if opt == 0:
+        style.print_blue_text('Los artículos seran cargados de manera automática...')
+    else:
+        style.print_blue_text('Carga manual...')
 
+    # Vector de participantes.
+    v = [None] * 16
 
-def random_load(vec):
     # Lista con los 16 posibles nombres.
     nombres = ['AED', 'MAD', 'ALG', 'SOR', 'ACO', 'AM1', 'ASI', 'AM2',
                'SSL', 'PPR', 'SOP', 'DSI', 'COM', 'GDA', 'SIM', 'ECO']
 
-    # Generación de un vector de participantes seleccionando los datos de forma aleatoria.
-    for i in range(len(vec)):
-        nombre = random.choice(nombres)
-        continente = random.randint(0, 4)
-        ranking = random.randint(0, 100)
+    for i in range(len(v)):
+        if opt == 1:  # Carga manual
+            style.print_blue_text(f'\nParticipante número {i + 1}')
 
-        vec[i] = Participante(nombre, continente, ranking)
+            nombre = input('Nombre del competidor: ')
+            continente = validate_between(0, 4, 'Continente(entre 0 y 4): ')
+            ranking = validate(0, 'Ranking: ')
 
-        # Eliminación del nombre usado en la lista original.
-        nombres.remove(nombre)
+        else:  # Carga automática
+            nombre = random.choice(nombres)
+            # Eliminación del nombre usado en la lista original.
+            nombres.remove(nombre)
 
+            continente = random.randint(0, 4)
+            ranking = random.randint(0, 100)
 
-def manual_load(vec):
-    # Generación de un vector de participantes cargando los datos manualmente.
-    for i in range(len(vec)):
-        print('Competidor ' + str(i+1))
-        nombre = input('Nombre del competidor: ')
-        continente = verify_in_range(int(input('Continente(entre 0 y 4): ')), 0, 5)
-        ranking = int(input('Ranking: '))
+        # Creo el registro con los datos, y lo agrego al arreglo de registros.
+        v[i] = Participante(nombre, continente, ranking)
 
-        vec[i] = Participante(nombre, continente, ranking)
+    return v
 
 
 def match_generation(participants):
@@ -66,53 +76,45 @@ def match_print(match_array):
 
     instancia = ''
     if len(match_array) == 8:
-
         instancia = 'Octavos de final'
 
     if len(match_array) == 4:
-
         instancia = 'Cuartos de final'
 
     if len(match_array) == 2:
-
         instancia = 'Semifinales'
 
     style.print_red_text('\nEnfrentamientos - ' + instancia)
     print()
 
     for i in range(len(match_array)):
-        print(f"{match_array[i][0].nombre} vs {match_array[i][1].nombre}")
+        print(f'{match_array[i][0].nombre} vs {match_array[i][1].nombre}')
 
 
 def match_simulation(match_array):
-
     c = 0
     suma = 0
     winners_array = []
 
     for i in range(len(match_array)):
-
         while c < 2:
-
             match_array[i][c].puntaje = random.randint(0, 1000)
             suma += match_array[i][c].puntaje
             c += 1
 
         if match_array[i][0].puntaje > match_array[i][1].puntaje:
-
             winners_array.append(match_array[i][0])
 
         else:
-
             winners_array.append(match_array[i][1])
 
         c = 0
 
     prom = round(suma / (len(match_array * 2)), 2)
-
     print('\nEl puntaje promedio obtenido por los equipos en esta instancia fue: ' + str(prom))
 
     return winners_array
+
 
 def participants_per_continent(vec):
     continent_acum = [0] * 5
@@ -121,17 +123,17 @@ def participants_per_continent(vec):
     return continent_acum
 
 
-def verify_in_range(num, n, x):
-    while not(num in range(n, x)):
-        print('Error. Debe ingresar un valor entre ' + str(n) + ' y ' + str(x - 1))
-        num = int(input('Continente(entre 0 y 4): '))
-
-    return num
+def show_participants_per_continent(data):
+    print(f'\nParticipantes de América: {data[0]}')
+    print(f'Participantes de Europa: {data[1]}')
+    print(f'Participantes de Asia: {data[2]}')
+    print(f'Participantes de Africa: {data[3]}')
+    print(f'Participantes de Oceanía: {data[4]}')
 
 
 def print_reg(vec):
-    for i in vec:
-        print(to_string(i))
+    for i in range(len(vec)):
+        print(vec[i])
 
 
 def ranking_shell_sort(vec):
@@ -151,3 +153,21 @@ def ranking_shell_sort(vec):
                 k -= h
             vec[k+h] = y
         h //= 3
+
+
+def validate(value, message):
+    # Valida el que el valor sea mayor al especificado en el parámetro.
+    n = int(input(message))
+    while n <= value:
+        style.print_red_text('Valor no admitido.')
+        n = int(input(message))
+    return n
+
+
+def validate_between(bottom, top, message):
+    # Valida que el valor ingresado esté dentro del rango especificado en los parámetros.
+    n = int(input(message))
+    while n < bottom or n > top:
+        style.print_red_text('Valor no admitido.')
+        n = int(input(message))
+    return n

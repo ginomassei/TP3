@@ -17,12 +17,12 @@ Por cada participante se conoce: nombre, continente (0: América, 1: Europa, 2:A
 [ ✅ ] Generar los cruces y mostrarlos. Simular la competencia con el puntaje obtenido por cada participante en la ronda.  
 [ ❗ ] → Estadística solicitada para este ítem: ¿Cuál fue el puntaje promedio por participante en octavos?
 
-[ ❗ ] Generar y mostrar los cuartos de final, con los ganadores de octavos, enfrentando al primero con el último, al segundo con el penúltimo, y así sucesivamente. 
+[ ✅ ] Generar y mostrar los cuartos de final, con los ganadores de octavos, enfrentando al primero con el último, al segundo con el penúltimo, y así sucesivamente. 
 
 [ ❗ ] Generar los cruces y mostrarlos. Simular la competencia con el puntaje obtenido por cada participante en la ronda.  
 [ ❗ ] → Estadística solicitada para este ítem: ¿Cuál fue el puntaje promedio por participante en cuartos?
 
-[ ❗ ] Generar y mostrar la semifinal, con los ganadores de cuartos, enfrentando al primero con el último, al segundo con el penúltimo, y así sucesivamente (ver gráfico). 
+[ ✅ ] Generar y mostrar la semifinal, con los ganadores de cuartos, enfrentando al primero con el último, al segundo con el penúltimo, y así sucesivamente (ver gráfico). 
 
 [ ❗ ] Generar los cruces y mostrarlos. Simular la competencia con el puntaje obtenido por cada participante en la ronda.  
 [ ❗ ] → Estadística solicitada para este ítem: ¿Cuál fue el puntaje promedio por participante en semifinal?
