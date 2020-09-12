@@ -95,26 +95,91 @@ def match_simulation(match_array):
     c = 0
     suma = 0
     winners_array = []
+    third_array = []
+    n = len(match_array)
 
-    for i in range(len(match_array)):
+    for i in range(n):
+        #Ciclo while para asegurarse de entrar en las dos posiciones de cada fila de la matriz
         while c < 2:
             match_array[i][c].puntaje = random.randint(0, 1000)
             suma += match_array[i][c].puntaje
             c += 1
 
+        #Comparación de puntajes
         if match_array[i][0].puntaje > match_array[i][1].puntaje:
             winners_array.append(match_array[i][0])
-
+            #En caso de semifinales, se almacena al equipo perdedor para que juegue por el tercer y cuarto puesto
+            if n == 2:
+                third_array.append(match_array[i][1])
+        #Comparación de puntajes
         else:
             winners_array.append(match_array[i][1])
+            #En caso de semifinales, se almacena al equipo perdedor para que juegue por el tercer y cuarto puesto
+            if n == 2:
+                third_array.append(match_array[i][0])
 
         c = 0
 
     prom = round(suma / (len(match_array * 2)), 2)
     print('\nEl puntaje promedio obtenido por los equipos en esta instancia fue: ' + str(prom))
 
+    if third_array != []:
+
+        return (winners_array, third_array)
+
     return winners_array
 
+def final_simulation(winners_array, third_array):
+
+    c = 0
+    champion = None
+    sub_champion = None
+    third = None
+
+    style.print_red_text('\n¡Tercer y Cuarto Puesto!')
+    print()
+    print(f'{third_array[0].nombre} vs {third_array[1].nombre}')
+
+    style.print_red_text('\n¡Final del Torneo!')
+    print()
+    print(f'{winners_array[0].nombre} vs {winners_array[1].nombre}')
+
+    input('\033[32;1m' + '\nPresione enter para continuar.' + '\033[m')
+
+    for i in range(2):
+        #Ciclo while para asegurarse de entrar en las dos posiciones de cada fila de la matriz para la final y para el
+        #tercer y cuarto puesto
+        while c < 2:
+            winners_array[c].puntaje = random.randint(0, 1000)
+            third_array[c].puntaje = random.randint(0, 1000)
+            c += 1
+
+    if winners_array[0].puntaje > winners_array[1].puntaje:
+        champion = winners_array[0]
+        sub_champion = winners_array[1]
+
+
+    else:
+        champion = winners_array[1]
+        sub_champion = winners_array[0]
+
+    if third_array[0].puntaje > third_array[1].puntaje:
+        third = third_array[0]
+
+    else:
+        third = third_array[1]
+
+
+    print('\nCampeón del torneo')
+    print(champion)
+    print('\nSubcampeón')
+    print(sub_champion)
+    print('\nTercer puesto')
+    print(third)
+
+    champion.ranking -= 25
+    sub_champion.ranking -= 15
+    third.ranking -= 5
 
 def participants_per_continent(vec):
     continent_acum = [0] * 5
