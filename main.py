@@ -49,10 +49,10 @@ def main():
         elif option == 4:
             if len(v) != 0:
                 match_arr = resources.match_generation(v)
-                n = 0
                 c = 0
-
-                while n < 3:
+                # Ciclo while para que se ejecute en octavos, cuartos y semifinales (3 fases)
+                while c < 3:
+                    # La primera vez, el partido ya está generado anteriormente
                     if c > 0:
                         match_arr = resources.match_generation(winners_arr)
 
@@ -60,9 +60,22 @@ def main():
 
                     print()
                     input('\033[32;1m' + 'Presione enter para continuar.' + '\033[m')
-                    winners_arr = resources.match_simulation(match_arr)
+
+                    # Si es la semifinal, debemos almacenar el arreglo de 3er y 4to puesto también
+                    if c == 2:
+                        winners_arr, third_arr = resources.match_simulation(match_arr)
+
+                    else:
+                        winners_arr = resources.match_simulation(match_arr)
+
                     c += 1
-                    n += 1
+
+                resources.final_simulation(winners_arr, third_arr)
+                input('\033[32;1m' + '\nPresione enter para mostrar la lista de participantes actualizada.' + '\033[m')
+
+                resources.ranking_shell_sort(v)
+                resources.print_reg(v)
+
             else:
                 style.print_red_text('No hay elementos cargados.')
 
