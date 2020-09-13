@@ -1,3 +1,10 @@
+"""
+Trabajo Práctico N3: Sistema de gestión de una competencia.
+
+Massei, Gino - 1K8 - 79366
+Tamosaitis, Juan Ezequiel - 1K10 - 86570
+"""
+
 import resources
 import style
 
