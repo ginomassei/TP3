@@ -11,7 +11,7 @@ class Participante:
         self.puntaje = 0
 
     def __str__(self):
-        # Tranforma un registro a su representación en string.
+        # Transforma un registro a su representación en string.
         r = ''
         r += 'Nombre del competidor: ' + self.nombre + ' | '
         r += ' Continente: ' + str(self.continente) + ' | '
@@ -73,7 +73,6 @@ def match_generation(participants):
 
 
 def match_print(match_array):
-
     instancia = ''
     if len(match_array) == 8:
         instancia = 'Octavos de final'
@@ -123,7 +122,7 @@ def match_simulation(match_array):
         c = 0
 
     prom = round(suma / (len(match_array * 2)), 2)
-    print('\nEl puntaje promedio obtenido por los equipos en esta instancia fue: ' + str(prom))
+    style.print_red_text(f'\nEl puntaje promedio obtenido por los equipos en esta instancia fue: {str(prom)}')
 
     if len(third_array) != 0:
         return winners_array, third_array
