@@ -126,7 +126,6 @@ def match_simulation(match_array):
     print('\nEl puntaje promedio obtenido por los equipos en esta instancia fue: ' + str(prom))
 
     if len(third_array) != 0:
-        print('basinga')
         return winners_array, third_array
 
     return winners_array

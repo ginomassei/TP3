@@ -27,22 +27,19 @@ def main():
             v = resources.load(1)
             style.print_green_text('Vector cargado correctamente.')
 
-            # Mostrar la estadística pedida.
-            data = resources.participants_per_continent(v)
-            resources.show_participants_per_continent(data)
-
         elif option == 2:
             v = resources.load()
             style.print_green_text('Vector cargado correctamente.')
-
-            # Mostrar la estadística pedida.
-            data = resources.participants_per_continent(v)
-            resources.show_participants_per_continent(data)
 
         elif option == 3:
             if len(v) != 0:
                 resources.ranking_shell_sort(v)
                 resources.print_reg(v)
+
+                # Mostrar la estadística pedida.
+                style.print_green_text('\nParticipantes por continente:')
+                data = resources.participants_per_continent(v)
+                resources.show_participants_per_continent(data)
             else:
                 style.print_red_text('No hay elementos para mostrar.')
 
@@ -81,7 +78,11 @@ def main():
 
             else:
                 style.print_red_text('No hay elementos cargados.')
-            print('-' * 80)
+
+        elif option == 0:
+            style.print_blue_text('Programa terminado...')
+
+        print('-' * 80)
 
 
 if __name__ == "__main__":
