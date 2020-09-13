@@ -83,7 +83,7 @@ def match_print(match_array):
     if len(match_array) == 2:
         instancia = 'Semifinales'
 
-    style.print_red_text('\nEnfrentamientos - ' + instancia)
+    style.print_blue_text('\nEnfrentamientos - ' + instancia)
     print()
 
     for i in range(len(match_array)):
@@ -133,11 +133,11 @@ def match_simulation(match_array):
 def final_simulation(winners_array, third_array):
     c = 0
 
-    style.print_red_text('\n¡Tercer y Cuarto Puesto!')
+    style.print_blue_text('\n¡Tercer y Cuarto Puesto!')
     print()
     print(f'{third_array[0].nombre} vs {third_array[1].nombre}')
 
-    style.print_red_text('\n¡Final del Torneo!')
+    style.print_blue_text('\n¡Final del Torneo!')
     print()
     print(f'{winners_array[0].nombre} vs {winners_array[1].nombre}')
 
@@ -163,12 +163,9 @@ def final_simulation(winners_array, third_array):
     else:
         third = third_array[1]
 
-    print('\nCampeón del torneo: ')
-    print(champion)
-    print('\nSubcampeón: ')
-    print(sub_champion)
-    print('\nTercer puesto: ')
-    print(third)
+    print(f'\nCampeón del torneo: {champion}')
+    print(f'\nSubcampeón: {sub_champion}')
+    print(f'\nTercer puesto: {third}')
 
     champion.ranking -= 25
     sub_champion.ranking -= 15
