@@ -49,6 +49,9 @@ def main():
         elif option == 4:
             if len(v) != 0:
                 match_arr = resources.match_generation(v)
+                winners_arr = []
+                third_arr = []
+
                 c = 0
                 # Ciclo while para que se ejecute en octavos, cuartos y semifinales (3 fases)
                 while c < 3:
@@ -78,6 +81,7 @@ def main():
 
             else:
                 style.print_red_text('No hay elementos cargados.')
+            print('-' * 80)
 
 
 if __name__ == "__main__":

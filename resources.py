@@ -133,11 +133,7 @@ def match_simulation(match_array):
 
 
 def final_simulation(winners_array, third_array):
-
     c = 0
-    champion = None
-    sub_champion = None
-    third = None
 
     style.print_red_text('\n¡Tercer y Cuarto Puesto!')
     print()
